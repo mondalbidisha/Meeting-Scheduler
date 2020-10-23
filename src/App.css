@@ -2,37 +2,89 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header {
+  font-size: 30px;
+  font-weight: 600;
+  background-color: black;
+  color: antiquewhite;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.outer-layout-container {
+  height: 75vh;
+  margin: auto;
+  padding: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.all-buildings-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.building-container {
+  border: 1px solid black;
+  padding: 20px;
+  height: 300px;
+  margin: 20px;
+  min-width: 350px;
+  height: 400px;
+}
+
+.meeting-room-container {
+  text-align: left;
+  margin: 10px;
+}
+
+.add-meeting-button {
+  width: auto;
+  padding: 15px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: wheat;
+  background: darkolivegreen;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-container{
+  margin: 0px auto;
+  padding: 20px;
+  width: 700px;
+}
+
+.form-element{
+  display: flex;
+  padding: 20px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px dashed;
 }
 
-.App-link {
-  color: #61dafb;
+.form-element div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+input {
+  width: 80%;
+  height: 50px;
+  font-size: 18px;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+ul{
+  list-style-type: none;
 }
